@@ -107,3 +107,21 @@ sys_uptime(void)
   release(&tickslock);
   return xticks;
 }
+
+#define SYSCON_ADDR 0x100000
+
+uint64
+sys_shutdown(void)
+{
+   volatile uint32 *virt_dev = (uint32*)SYSCON_ADDR;
+   *virt_dev = 0x5555;
+   return 0;
+}
+
+uint64
+sys_reboot(void)
+{
+   volatile uint32 *virt_dev = (uint32*)SYSCON_ADDR;
+   *virt_dev = 0x7777;
+   return 0;
+}
