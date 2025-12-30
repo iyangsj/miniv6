@@ -15,14 +15,12 @@ Once they are installed, and in your shell search path, you can run:
 make qemu
 ```
 
+# Testing
+```
+python3 ./test-xv6.py test
+```
+
 
 # Acknowledgments
 
-xv6 is inspired by John Lions's Commentary on UNIX 6th Edition (Peer
-to Peer Communications; ISBN: 1-57398-013-7; 1st edition (June 14,
-2000)).  See also https://pdos.csail.mit.edu/6.1810/, which provides
-pointers to on-line resources for v6.
-
-The following people have made contributions: Russ Cox (context switching,
-locking), Cliff Frey (MP), Xiao Yu (MP), Nickolai Zeldovich, Austin
-Clements and [more](https://github.com/mit-pdos/xv6-riscv/blob/riscv/README).
+See [xv6](https://github.com/mit-pdos/xv6-riscv/blob/riscv/README)
